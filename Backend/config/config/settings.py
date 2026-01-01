@@ -43,7 +43,10 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+<<<<<<< HEAD
     "corsheaders.middleware.CorsMiddleware",
+=======
+>>>>>>> 60891a8ac8e2fd2eeface28c0cde940817cb097d
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -81,7 +84,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'postgres',
+<<<<<<< HEAD
         'PASSWORD': '1234',
+=======
+        'PASSWORD': 'postgres',
+>>>>>>> 60891a8ac8e2fd2eeface28c0cde940817cb097d
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -123,10 +130,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = "static/"
+<<<<<<< HEAD
 SIMPLE_JWT = {
     "AUTH_HEADER_TYPES": ("Bearer",),
 }
 
+=======
+>>>>>>> 60891a8ac8e2fd2eeface28c0cde940817cb097d
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
@@ -134,5 +144,8 @@ REST_FRAMEWORK = {
 }
 
 AUTH_USER_MODEL = 'users.User'
+<<<<<<< HEAD
 CORS_ALLOW_ALL_ORIGINS = True
 
+=======
+>>>>>>> 60891a8ac8e2fd2eeface28c0cde940817cb097d
